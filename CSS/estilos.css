@@ -1,18 +1,48 @@
+/*magin/padding reset do css*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-    background-image: url("https://wallpapercave.com/wp/wp2967926.jpg");
-    background-size: auto 200vh;
+    background-image: url("./imagens site/background.jpg");
+    background-size: auto 100vh;
     font-family: arial;
     height: 100vh;
+    font-size: 12px;
+  }
+  /*novo*/ /*se a tela tiver 400px vai carregar esses estilos*/
+  @media (min-width: 400px) {
+  body{
+    font-size: 14px;
+  }
+  @media (min-width: 768px) {
+    body{
+      font-size: 25px;
+    }
+  }
+  header{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .menu {
     background-color: #1122;
+    position: fixed;
+    top: 0;
   }
   .menu ul{
     display: flex;
     justify-content: space-around;
+    width: 100vw; /*novo*/
   }
   .menu li{
     list-style: none;
+  }
+  .menu a{ /*novo*/
+    display: block;
+    padding: 10px 20px;
   }
   a {
     color: black;
@@ -21,6 +51,18 @@ body {
   a:hover {
     text-decoration: underline;
   }
+  .site-title{ /*add*/
+    font-family: fantasy;
+    text-align: center;
+    color: #032E9B ;
+  }
+  /*add*/
   .site-subtitle{
     font-style: italic;
+    text-align: center;
+    color: #DE0000;
+  }
+  .img-portfolio{
+    height: 100px;
+    width: 100px; 
   }

@@ -4,17 +4,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
     background-image: url("./imagens site/background.jpg");
     background-size: auto 100vh;
-    font-family: arial;
+    font-family: 'Press Start 2P', cursive;
     height: 100vh;
     font-size: 12px;
   }
-  /*novo*/ /*se a tela tiver 400px vai carregar esses estilos*/
+
+  /*novo/ se a tela tiver 400px vai carregar esses estilos*/
+  @media (min-width: 300px) {
+    body{
+     font-size: 10px;
+    }
+  }
   @media (min-width: 400px) {
   body{
     font-size: 14px;
+    }
   }
   @media (min-width: 768px) {
     body{
@@ -22,47 +30,93 @@ body {
     }
   }
   header{
-    height: 50vh;
+    height: 75vh;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .menu {
     background-color: #1122;
     position: fixed;
     top: 0;
   }
+
   .menu ul{
     display: flex;
     justify-content: space-around;
-    width: 100vw; /*novo*/
+    width: 100vw;
   }
+
   .menu li{
     list-style: none;
   }
-  .menu a{ /*novo*/
+  
+  .menu a{
     display: block;
     padding: 10px 20px;
   }
+
   a {
     color: black;
     text-decoration: none;
   }
+
   a:hover {
     text-decoration: underline;
   }
-  .site-title{ /*add*/
-    font-family: fantasy;
+
+  .site-title{
+    font-family: 'Press Start 2P', cursive;
     text-align: center;
-    color: #032E9B ;
+    color: #032E9B;
+    line-height: 1.3em;
   }
-  /*add*/
+
   .site-subtitle{
-    font-style: italic;
+    font-size: 1em;
+    font-family: 'Press Start 2P', cursive;
     text-align: center;
     color: #DE0000;
+    line-height: 1.5em;
   }
+
+  .portfolio {
+  padding: 1em;
+  margin-bottom: 1em;
+  }
+
+  .portfolio h2{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1em;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+
+  .portfolio .grid{
+   display: grid;
+   gap: 2em;
+   grid-template-columns: 240px;
+  }
+/*media do portfolio*/
+  @media (min-width: 300px){
+    .portfolio .grid{
+      grid-template-columns: 240px;
+     justify-content: center;}
+  }
+  @media (min-width: 1000px){
+  .portfolio .grid{
+    grid-template-columns: 540px;
+    justify-content: center;}
+  }
+
+  .portfolio figure{
+    text-align: center;
+  }
+
   .img-portfolio{
-    height: 100px;
-    width: 100px; 
+    height: 200px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 10px;
   }

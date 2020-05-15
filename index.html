@@ -2,43 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!novo>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedro Davi</title>
     <link rel="stylesheet" href="CSS/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;1,300&family=Press+Start+2P&family=Source+Code+Pro&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/708ef2e622.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <nav class="menu">
           <ul>
-            <li><a href="#">Jogos</a></li>
-            <li><a href="#">Sobre mim:</a></li>
-            <li><a href="https://www.instagram.com/pedro.davi55">Contato</a></li>
+            <li><a href="#home"></a><i class="fas fa-home"></i></li>
+            <li><a href="#Jogos">Jogos</a></li>
+            <li><a href="#sobre">Sobre Mim:</a></li>
+            <li><a href="#Contatos">Contatos</a></li>
+
           </ul>
         </nav> 
-        <div>
+        <div class="title" id="home">
             <h1 class="site-title">Pedro Davi Monteiro</h1>  
             <h2 class="site-subtitle"> Tec. de Manutenção e sup. em Info</h2>
             <h2 class="site-subtitle"> Estudante de C&T-UFRN</h2>
       </div>
       </header>
-       <section class="portfolio"> <!nova linha>
+       <section class="portfolio" id="sobre">
         <h2>Sobre Mim:</h2>
-
       <div class="grid">
         <figure>
           <img class="img-portfolio" src="./CSS/imagens site/icones.png" alt="Quem sou eu?">
           <figcaption>Quem sou eu?</figcaption>
+          <p> Me chamo Pedro Davi, mas pode me chamar de Dark ou Thosaka, tenho 17 anos, e meu contato com a area da progamação começou no ano passado (2019) quando eu tive que pagar logica da programação, onde eu aprendi liguagem C e C++ com a professora Daniela Rakuel, apartir dai eu comecei a ter mais curiosidade e um amor por essa area. Depois disso eu comecei a estudar HTML sozinho, ainda não sei muita coisa mas to tentando aprender. No momento eu estou cursando C&T (ciencia e tecnologia) que é um curso daqui da UFRN para pode ingressar em algumas engenharias espicíficas.</p>
+          <p> Aproveitando, queria agradecer pelo curso maravilhoso da <a href="https://www.alura.com.br/imersao-css">Imerssão CSS da Alura</a> que me ajudou no aprendizado de HTML e CSS, e tambem mandar um abraço pro Paulo, pra Vanessa e pra Juliana que foram maravilhosos ensinando a programar durante essa semana.</p>
         </figure> 
         <figure>
           <img class="img-portfolio" src="./CSS/imagens site/icones 3.png" alt="Projetos pessoais">
           <figcaption>Projetos pessoais</figcaption>
+          <p> Não tenho muitos projetos pessoais, mas o maior deles é o de concluir minha faculdade pra trabalhar na area de eng. da computação e fazer intercambio pro Canadá ou EUA.</p>
         </figure>
         <figure>
           <img class="img-portfolio" src="./CSS/imagens site/icones 2.png" alt="Gamer-life">
           <figcaption>Gamer-life</figcaption>
+          <p> Então... to nessa vida praticamente desde que nasci (kkkkkkkk), comecei a jogar desde os meus 5 ou 6 anos de idade por influência do meu pai. Ele me botava pra jogar Bomberman, SuperMario, ai com o tempo ganhei meu Ps2, e claro que eu comprei um emulador com todos os jogos do Supernintendo.</p>
+          <p> Ai o tempo foi passando e passei a jogar mais pelo computador, foi quando conheci o Minecraft, League of legends, Dota 2, CS:GO e por ai vai.
+          </p>
         </figure>
       </div>
+      </section>
+      <section class="Jogos" id="Jogos">
+        <h2>Jogos</h2>
+        <p> Aqui estão alguns jogos que eu costumo jogar</p>            <div class="grid">
+        <figure>
+            <img class="img-jogos" src="./CSS/imagens site/lol.jpg" alt="League of Legends"> <figcaption>League of Legends</figcaption>
+        </figure>
+        <figure>
+          <img class="img-jogos" src="./CSS/imagens site/CSGO.png" alt="CSGO"><figcaption>CS:GO</figcaption>
+        </figure>
+        <figure>    
+            <img class="img-jogos" src="./CSS/imagens site/DMO2.jpg" alt="DMO"><figcaption>Digimon Masters Online</figcaption>
+        </figure>
+        <figure>
+            <img class="img-jogos" src="./CSS/imagens site/TW3.png" alt="TW3"><figcaption>The Witcher</figcaption>
+        </figure>
+        <figure>
+            <img class="img-jogos" src="./CSS/imagens site/mario.jpg" alt="mario"><figcaption>Super Mario</figcaption>
+        </figure>
+        <figure>
+            <img class="img-jogos" src="./CSS/imagens site/pokemongo.jpg" alt="pokemongo"><figcaption>pokemonGO</figcaption>
+        </figure>
+        </div>
+      </section>
+      <!ultima section>
+      <section class="contato" id="Contatos">
+        <h2>Contatos:</h2>
+        <div class="grid icons">
+          <a target="_blank" href="https://github.com/Pedro-davi55">
+            <i class="fab fa-github-alt"></i>
+          </a>
+          <a target="_blank" href="https://twitter.com/cebolaBR">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a target="_blank" href="https://www.instagram.com/pedro.davi55">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a target="_blank" href="https://steamcommunity.com/id/Darck0fLigth/">
+            <i class="fab fa-steam"></i>
+          </a>
+          <a href="mailto:davimonteirorn@hotmail.com">
+            <i class="far fa-envelope"></i>
+          </a>
+        </div>
       </section>
 </body>
 </html> 

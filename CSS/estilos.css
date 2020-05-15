@@ -55,6 +55,11 @@ body {
   .menu a{
     display: block;
     padding: 10px 20px;
+    transition: color 2s;
+  }
+  .menu a:hover{
+    text-shadow: 0px 0px 15px green;
+    color: white;
   }
 
   a {
@@ -80,19 +85,26 @@ body {
     color: #DE0000;
     line-height: 1.5em;
   }
-
+/*seção de portfolio*/
   .portfolio {
   padding: 1em;
   margin-bottom: 1em;
   }
-
+  .portfolio a:hover{
+     color: black;
+     background-color: blanchedalmond;
+  }
   .portfolio h2{
     font-family: 'Press Start 2P', cursive;
     font-size: 1em;
     margin: 0.5em;
     padding: 0.5em;
   }
-
+  .portfolio P{
+    font-family: 'Source Code Pro';
+    color: #0037D5;
+    text-indent: 1em;
+  }
   .portfolio .grid{
    display: grid;
    gap: 2em;
@@ -100,7 +112,7 @@ body {
   }
 /*media do portfolio*/
   @media (min-width: 300px){
-    .portfolio .grid{
+  .portfolio .grid{
       grid-template-columns: 240px;
      justify-content: center;}
   }
@@ -120,3 +132,58 @@ body {
     object-fit: cover;
     border-radius: 10px;
   }
+
+  .Jogos h2{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1em;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  .Jogos .grid{
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 240px;
+  }
+  @media (min-width: 300px){
+    .Jogos .grid{
+      grid-template-columns: 240px;
+     justify-content: center;}
+  }
+  @media (min-width: 1000px){
+    .Jogos .grid{
+      grid-template-columns:  540px 540px;
+     justify-content: center;}
+  }
+.Jogos p{
+  font-family: 'Source Code Pro';
+  color: #0037D5;
+  text-indent: 1em;
+}
+  .Jogos figure{
+    text-align: center;
+  }
+  .img-jogos{
+    height: 200px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  /*seção de contatos*/
+  .contato h2{
+    font-size: 1em;
+  }
+  .contato a {
+   color: whitesmoke;
+   font-size: 2em;
+  }
+ .contato a:hover{
+   text-decoration: none;
+   text-shadow: 0px 0px 15px red;
+ }
+.contato .icons{
+  text-align: center;
+}
+.contato{
+  background-size: auto 100vh;
+  height: 15vh;
+}
